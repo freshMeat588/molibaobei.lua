@@ -2,7 +2,7 @@ local announceflg = true; --对首次进入游戏玩家全副公告
 local useloginpoint = false; --是否开启新玩家自定义登陆点,可以再cgmsv.cf中设置,所以默认关闭
 local WelcomeMessage = {};--欢迎词
 table.insert(WelcomeMessage,"你好呀，冒险者");
-table.insert(WelcomeMessage,"Ctrl+1 内挂菜单，Ctrl+3 英雄管理菜单，/1 自动遇敌 /2 不遇敌。");
+table.insert(WelcomeMessage,"Ctrl+1 内挂菜单，Ctrl+3 英雄管理菜单，/1 自动遇敌 /2 不遇敌 /bbyd 步步遇敌 /byd 不遇敌 /hc 回车 /zl 背包整理 /jd 鉴定 /xl 修理 /dk 打卡 /zh 招魂。");
 table.insert(WelcomeMessage,"点亮交易按钮开启战斗结束整理背包+卖魔石!");
 
 Delegate.RegDelLoginEvent("Welcome_LoginEvent");

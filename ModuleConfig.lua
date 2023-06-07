@@ -5,14 +5,16 @@ loadModule('battleExtend')
 loadModule('gmsvData')
 useModule('Welcome')
 useModule("packagesort");	--自动整理背包
---<<<<<<< HEAD
+
 --useModule("hunter")
 --useModule("autowarp")
 --useModule("laba")
-useModule("namechanger")
-useModule("EasyWarp")
---=======
--->>>>>>> 24aed14c3e243632f864d48c6368dc111130e4e7
+--useModule("namechanger")
+--useModule("EasyWarp")
+--useModule("NewbieBless")
+--useModule("ng")
+--useModule("phb")
+useModule("question")
 loadModule('onlineplayer')
 loadModule('heroCaLL')
 loadModule('heroWashPoint')
@@ -31,15 +33,12 @@ loadModule('encountEX')
 loadModule('tech15') --15级技能
 loadModule('admin')
 loadModule('adminCommands')
-loadModule('ng')
+--loadModule('ng')
 loadModule('menu')
 loadModule('shop')
 loadModule('warp')
 loadModule('warp2')
---<<<<<<< HEAD
 
---=======
--->>>>>>> 24aed14c3e243632f864d48c6368dc111130e4e7
 --loadModule('itemPowerUp')
 loadModule('petRebirth')
 loadModule('petLottery')

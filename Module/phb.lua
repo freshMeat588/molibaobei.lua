@@ -10,7 +10,7 @@ function phb_npc_init(index)
 end
 
 function phb_Init()
-     if(phbSelectNPC == nil)then
+  if(phbSelectNPC == nil)then
 		phbSelectNPC = NL.CreateNpc("lua/Module/phb.lua", "phb_npc_init");
 		Char.SetData(phbSelectNPC,%对象_形象%,11424);
 		Char.SetData(phbSelectNPC,%对象_原形%,11424);
@@ -99,8 +99,8 @@ function phbSelectWTalked(_me,_tome,_seqno,_select,_data)
 				kbwb = kbwb .." ";
 			end
 		  showtext=showtext.."\\n["..tostring(i+1).."]"..ret[i.."_0"].."                        "..kbwb..ret[i.."_1"];
-        end
-    end
+    end 
+  end
 	NLG.ShowWindowTalked(_tome,_me,%窗口_巨信息框%,%按钮_上下取消%,_seqno,showtext);
 	return;
 	

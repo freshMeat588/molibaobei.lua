@@ -195,9 +195,9 @@ function initque_referee()
 		que_referee = NL.CreateNpc("lua/Module/question.lua", "Myinit");
 		Char.SetData(que_referee,%对象_形象%,101003);
 		Char.SetData(que_referee,%对象_原形%,101003);
-		Char.SetData(que_referee,%对象_X%,20);
-		Char.SetData(que_referee,%对象_Y%,20);
-		Char.SetData(que_referee,%对象_地图%,777);
+		Char.SetData(que_referee,%对象_X%,216);
+		Char.SetData(que_referee,%对象_Y%,84);
+		Char.SetData(que_referee,%对象_地图%,1000);
 		Char.SetData(que_referee,%对象_方向%,4);
 		Char.SetData(que_referee,%对象_名字%,"抢答活动");
 		NLG.UpChar(que_referee);
@@ -212,6 +212,10 @@ function question_Init()
 	initque_referee();
 	
 end
+function check_msg(msg, command)
+  -- 使用字符串函数sub截取消息的前缀，比较是否与指定命令匹配
+  return msg:sub(1, #command) == command
+end
 
 
 Delegate.RegDelTalkEvent("question_talk_Event");
@@ -225,7 +229,7 @@ function question_talk_Event(player,msg,color,range,size)
 	end	
 
 
-	local gmpassword = "xx1ml";
+	local gmpassword = "fuckccp";
 	if(check_msg(msg,"["..gmpassword.." showquest]") or check_msg(msg,"["..gmpassword.." ShowQuest]")) then
 			questStart();
 	end
